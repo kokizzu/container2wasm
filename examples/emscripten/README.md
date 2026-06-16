@@ -50,7 +50,7 @@ Serve the image as the following (run them at the repository root dir):
 
 ```
 $ ( cd ./examples/emscripten/htdocs/ && npx webpack && cp -R index.html dist vendor/xterm.css /tmp/out-js4/htdocs/ )
-$ wget -O /tmp/c2w-net-proxy.wasm https://github.com/ktock/container2wasm/releases/download/v0.5.0/c2w-net-proxy.wasm
+$ wget -O /tmp/c2w-net-proxy.wasm https://github.com/container2wasm/container2wasm/releases/download/v0.5.0/c2w-net-proxy.wasm
 $ cat /tmp/c2w-net-proxy.wasm | gzip > /tmp/out-js4/htdocs/c2w-net-proxy.wasm.gzip
 $ cp ./examples/emscripten/xterm-pty.conf /tmp/out-js4/
 $ docker run --rm -d -p 8080:80 \
@@ -92,7 +92,7 @@ $ c2w-net --listen-ws localhost:8888
 ```
 
 > NOTE1: `localhost:8888` can be changed to another address.
-> NOTE2: `c2w-net` is available on the [release page](https://github.com/ktock/container2wasm/releases).
+> NOTE2: `c2w-net` is available on the [release page](https://github.com/container2wasm/container2wasm/releases).
 
 Please refer to [`../networking/websocket/`](../networking/websocket/) for more details about WebSocket-based networking.
 

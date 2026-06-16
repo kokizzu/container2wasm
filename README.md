@@ -1,4 +1,4 @@
-[[⬇️**Download**]](https://github.com/ktock/container2wasm/releases)
+[[⬇️**Download**]](https://github.com/container2wasm/container2wasm/releases)
 [[📖 **Command reference**]](#command-reference)
 [[📚 **Additional Documents**]](#additional-resources)
 [[▶️**Demo**]](https://ktock.github.io/container2wasm-demo/)
@@ -109,7 +109,7 @@ The following also puts the [network stack runnable on browser](./extras/c2w-net
 
 ```
 $ cp -R ./examples/wasi-browser/* /tmp/out-js2/ && chmod 755 /tmp/out-js2/htdocs
-$ wget -O /tmp/out-js2/htdocs/c2w-net-proxy.wasm https://github.com/ktock/container2wasm/releases/download/v0.5.0/c2w-net-proxy.wasm
+$ wget -O /tmp/out-js2/htdocs/c2w-net-proxy.wasm https://github.com/container2wasm/container2wasm/releases/download/v0.5.0/c2w-net-proxy.wasm
 $ docker run --rm -p 8080:80 \
          -v "/tmp/out-js2/htdocs:/usr/local/apache2/htdocs/:ro" \
          -v "/tmp/out-js2/xterm-pty.conf:/usr/local/apache2/conf/extra/xterm-pty.conf:ro" \
@@ -143,7 +143,7 @@ This example serves the image on `localhost:8080` using apache http server.
 
 ```console
 $ ( cd ./examples/emscripten/htdocs/ && npx webpack && cp -R index.html dist vendor/xterm.css /tmp/out-js/htdocs/ )
-$ wget -O /tmp/c2w-net-proxy.wasm https://github.com/ktock/container2wasm/releases/download/v0.5.0/c2w-net-proxy.wasm
+$ wget -O /tmp/c2w-net-proxy.wasm https://github.com/container2wasm/container2wasm/releases/download/v0.5.0/c2w-net-proxy.wasm
 $ cat /tmp/c2w-net-proxy.wasm | gzip > /tmp/out-js/htdocs/c2w-net-proxy.wasm.gzip
 $ cp ./examples/emscripten/xterm-pty.conf /tmp/out-js/
 $ docker run --rm -p 127.0.1:8080:80 \
@@ -174,7 +174,7 @@ You can install the converter command `c2w` using one of the following methods.
 
 ### Release binaries
 
-Binaries are available from https://github.com/ktock/container2wasm/releases
+Binaries are available from https://github.com/container2wasm/container2wasm/releases
 Extract the tarball and put the binary somewhere under `$PATH`.
 
 ### Building binaries using make
