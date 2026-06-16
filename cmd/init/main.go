@@ -15,7 +15,7 @@ import (
 	"syscall"
 	"time"
 
-	inittype "github.com/ktock/container2wasm/cmd/init/types"
+	inittype "github.com/container2wasm/container2wasm/cmd/init/types"
 	imagespec "github.com/opencontainers/image-spec/specs-go/v1"
 	runtimespec "github.com/opencontainers/runtime-spec/specs-go"
 )
