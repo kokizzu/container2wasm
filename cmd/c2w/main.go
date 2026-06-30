@@ -11,10 +11,10 @@ import (
 	"path/filepath"
 	"time"
 
+	vendor "github.com/container2wasm/container2wasm"
+	"github.com/container2wasm/container2wasm/version"
 	"github.com/containerd/containerd/archive"
 	"github.com/containerd/platforms"
-	vendor "github.com/ktock/container2wasm"
-	"github.com/ktock/container2wasm/version"
 	"github.com/urfave/cli"
 )
 

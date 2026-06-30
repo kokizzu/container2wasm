@@ -58,7 +58,7 @@ jobs:
 
         ## About \`c2w-net-proxy.wasm\`
 
-        Please refer to [the document about networking for container on browser](https://github.com/ktock/container2wasm/tree/${RELEASE_TAG}/examples/networking/fetch/) for details and usage.
+        Please refer to [the document about networking for container on browser](https://github.com/container2wasm/container2wasm/tree/${RELEASE_TAG}/examples/networking/fetch/) for details and usage.
 
         ---
         

@@ -13,7 +13,7 @@ import (
 
 	"gotest.tools/v3/assert"
 
-	"github.com/ktock/container2wasm/tests/integration/utils"
+	"github.com/container2wasm/container2wasm/tests/integration/utils"
 )
 
 const hostVirtIP = "192.168.127.254"

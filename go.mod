@@ -1,4 +1,4 @@
-module github.com/ktock/container2wasm
+module github.com/container2wasm/container2wasm
 
 go 1.25.0
 
